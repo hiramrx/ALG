@@ -39,11 +39,11 @@ public class ArrayQueue
     {
         if (tail == n) {
             if (head == 0) return false;
-            for　(int i = 0;i<=tail-head+1;i++) {
+            for　(int i = 0;i<=tail-head+1;++i) {
                 items[i] = items[i+head];
             }
             head = 0;
-            tail = tail-head+1;
+            tail = tail-head;
         }
         items[tail] = item;
         ++tail;
