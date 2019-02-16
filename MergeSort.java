@@ -21,12 +21,12 @@ public void Merge(int[] a,int low,int mid,int high)
     }
     if (i<=mid) {
         for (int l=0; l < mid-i; l++) {
-            a[k++] = a[i+l];
+            a[k++] = a[i++];
         }
     }
     if (j<=high) {
         for (int l=0; l < mid-i; l++) {
-            a[k++] = a[j+l];
+            a[k++] = a[j++];
         }
     }
 }

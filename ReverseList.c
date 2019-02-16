@@ -1,16 +1,16 @@
-struct ListNode {
+// 单链表反转
+
+// 单链表节点定义
+typedef struct ListNode {
     int val;
     struct ListNode *next;
-    ListNode(int x):
-    val(x), next(null){
-    }
-};
+}ListNode;
 
 ListNode* ReverseList(ListNode* pHead)
 {
     ListNode* pPrev = NULL;
     ListNode* pNode = pHead;
-    ListNode* pReversedHead = NUll;
+    ListNode* pReversedHead = NULL;
 
     while (pNode != NULL) {
         ListNode* pNext = pNode->next;
