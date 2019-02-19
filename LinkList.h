@@ -3,6 +3,6 @@ typedef struct Node
 {
     ElemType data;
     struct Node *next;
-}Node;
+} Node;
 
 typedef struct Node *LinkList;
