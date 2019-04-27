@@ -29,8 +29,7 @@ do { // never stop the daemon
     echo "Received msg: $buf   \n";
 
     //数据传送 向客户端写入返回结果
-//    $msg = "welcome \n";
-    $msg = $buf.PHP_EOL;
+    $msg = "welcome \n";
     socket_write($msgsock, $msg, strlen($msg)) or die("socket_write() failed: reason: " . socket_strerror(socket_last_error()) . "/n");
     //一旦输出被返回到客户端,父/子socket都应通过socket_close($msgsock)函数来终止
     socket_close($msgsock);
