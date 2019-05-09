@@ -16,14 +16,15 @@ ListNode *ReverseList(ListNode *pHead)
 
     while (pNode != NULL)
     {
-        ListNode *pNext = pNode->next;
+        ListNode *pNext = pNode->next; //保存下一个节点
         if (pNext == NULL)
         {
             pReversedHead = pNode;
         }
-        pNode->next = pPrev;
-        pPrev = pNode;
-        pNode = pNext;
+        pNode->next = pPrev; //反转节点
+        
+        pPrev = pNode; //保存上一个节点，供下一次反转
+        pNode = pNext; //进行下一次迭代
     }
     return pReversedHead;
 }
