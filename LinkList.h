@@ -1,6 +1,5 @@
 typedef int ElemType;
-typedef struct Node
-{
+typedef struct Node {
     ElemType data;
     struct Node *next;
 } Node;
