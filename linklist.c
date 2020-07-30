@@ -1,5 +1,5 @@
 //单链表的插入和删除
-#include "LinkList.h"
+#include <linklist.h>
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
